@@ -1,0 +1,11 @@
+{:secrets                      #include ".secrets.edn"
+
+ :clj-htmx-template.config/port    #profile {:default 3000}
+ :clj-htmx-template.config/datomic #profile {:default {:db     {:db-name "clj-htmx-template"}
+                                                       :client {:server-type :datomic-local
+                                                                :system      "dev"
+                                                                :storage-dir "/tmp/clj-htmx-template"}}}
+
+ :clj-htmx-template.config/google
+ {:clj-htmx-template.config/client-id     "56960130319-4rc3d77mg4f2prttvdl82qjsfl4hmhbe.apps.googleusercontent.com"
+  :clj-htmx-template.config/client-secret #ref [:secrets :google-client-secret]}}

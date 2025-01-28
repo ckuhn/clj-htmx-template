@@ -1,0 +1,21 @@
+:root {
+  --pico-font-family: monospace;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.nav-profile img {
+  max-width: 35px;
+  border-radius: 10px;
+}
+
+.nav-profile div {
+  display: flex;
+  flex-direction: column;
+}
+
+#credential_picker_container {
+  color-scheme: light;
+}
